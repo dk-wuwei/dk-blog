@@ -37,14 +37,17 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/dk-wuwei/dk-blog/tree/main/',
         },
         blog: {
+          path: './blog',
+          routeBasePath: "/",
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/dk-wuwei/dk-blog/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -69,58 +72,46 @@ const config = {
           //   position: 'right',
           //   label: 'Tutorial',
           // },
-          {to: '/blog', label: 'Blog', position: 'right'},
-          // {
-          //   href: 'https://github.com/dk-wuwei/dk-blog',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          // {to: '/', label: 'Blog', position: 'right'},
+          {
+            href: 'https://juejin.cn/user/536217407720958/posts',
+            label: '掘金',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/dk-wuwei/dk-blog',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Blog',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-            ],
-          },
-          {
-            title: '社交媒体',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/dk-wuwei/dk-blog',
-              },
-              {
-                label: '掘金',
-                href: 'https://juejin.cn/user/536217407720958/posts',
-              },
-              // {
-              //   label: 'Twitter',
-              //   href: 'https://twitter.com/docusaurus',
-              // },
-            ],
-          },
-          // {
-          //   title: '友情链接',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
-        ],
-        copyright: `<p>Copyright © 2022 DK Built with Docusaurus.</p><p><a href="https://beian.miit.gov.cn/">豫ICP备2021031684号-1</a></p><p>转载须注明署名和出处，且不可用于商业用途。</p>`,
+        // links: [
+        //   {
+        //     title: 'Blog',
+        //     items: [
+        //       {
+        //         label: 'Blog',
+        //         to: '/blog',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: '社交媒体',
+        //     items: [
+        //       {
+        //         label: 'GitHub',
+        //         href: 'https://github.com/dk-wuwei/dk-blog',
+        //       },
+        //       {
+        //         label: '掘金',
+        //         href: 'https://juejin.cn/user/536217407720958/posts',
+        //       },
+        //     ],
+        //   },
+        // ],
+        copyright: `<p>Copyright © 2022 DK Built with Docusaurus. | <a href="https://beian.miit.gov.cn/">豫ICP备2021031684号-1</a></p>`,
       },
       prism: {
         theme: lightCodeTheme,
