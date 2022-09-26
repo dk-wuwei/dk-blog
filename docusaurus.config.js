@@ -111,7 +111,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `<p>Copyright © 2022 DK Built with Docusaurus. | <a href="https://beian.miit.gov.cn/">豫ICP备2021031684号-1</a></p>`,
+        copyright: `<p>Copyright © 2022 DK Built with Docusaurus.</p>`,
       },
       prism: {
         theme: lightCodeTheme,
