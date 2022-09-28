@@ -33,6 +33,7 @@ Control+shift+J 把下面行的缩进收上来
 shift + F6 高级修改，可快速修改光标所在的标签、变量、函数等
 alt+/ 代码补全
 ```
+<!--truncate-->
 
 ## 调试
 ```html
