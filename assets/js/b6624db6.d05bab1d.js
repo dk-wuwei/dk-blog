@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9759],{2454:e=>{e.exports=JSON.parse('{"label":"ElementUI","permalink":"/dk-blog/tags/element-ui","allTagsPath":"/dk-blog/tags","count":1}')}}]);
