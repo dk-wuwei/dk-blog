@@ -45,7 +45,8 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
           editUrl:
             'https://github.com/dk-wuwei/dk-blog/tree/main/',
         },

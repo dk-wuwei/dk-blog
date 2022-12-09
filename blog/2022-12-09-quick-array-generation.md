@@ -2,7 +2,7 @@
 slug: quick-array-generation
 title: JS快速生成数组的方法
 authors: DK
-tags: [CSS]
+tags: [JavaScript]
 ---
 
 ## 1、for循环
