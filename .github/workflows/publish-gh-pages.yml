@@ -6,25 +6,23 @@ name: publish-gh-pages
 on:
   push:
     branches:
-      - mian
+      - main
 
 jobs:
   publish-gh-pages:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Checkout
       - uses: actions/checkout@v3
-      
+
       - name: Build
       - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm i && npm build
-      
+
       - name: DeployGP
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.DK_BLOG_TOKEN }}
           publish_dir: ./build
-
-
