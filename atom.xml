@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dk-wuwei.github.io/dk-blog/</id>
     <title>DK Blog Blog</title>
-    <updated>2023-07-16T00:00:00.000Z</updated>
+    <updated>2023-08-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dk-wuwei.github.io/dk-blog/"/>
     <subtitle>DK Blog Blog</subtitle>
     <icon>https://dk-wuwei.github.io/dk-blog/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[浅析MVVM]]></title>
+        <id>mvvm</id>
+        <link href="https://dk-wuwei.github.io/dk-blog/mvvm"/>
+        <updated>2023-08-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[为什么要有这些模式，目的：职责划分、分层（将Model层、View层进行分类）借鉴后端思想，对于前端而已，就是如何将数据同步到页面上]]></summary>
+        <content type="html"><![CDATA[<p>为什么要有这些模式，目的：职责划分、分层（将Model层、View层进行分类）借鉴后端思想，对于前端而已，就是如何将数据同步到页面上</p><ul><li>传统的 MVC 指的是,用户操作会请求服务端路由，路由会调用对应的控制器来处理，控制器会获取数据。将结果返回给前端,页面重新渲染</li><li>MVVM：传统的前端会将数据手动渲染到页面上, MVVM 模式不需要用户收到操作 dom 元素,将数据绑定到 viewModel 层上，会自动将数据渲染到页面中，视图变化会通知 viewModel层 更新数据。ViewModel 就是我们 MVVM 模式中的桥梁</li></ul><p>MVVM模式 映射关系的简化，隐藏了controller</p><blockquote><p>MVVM是Model-View-ViewModel缩写，也就是把MVC中的Controller演变成ViewModel。Model层代表数据模型，View代表UI组件，ViewModel是View和Model层的桥梁，数据会绑定到viewModel层并自动将数据渲染到页面中，视图变化的时候会通知viewModel层更新数据。</p></blockquote><ul><li>Model: 代表数据模型，也可以在Model中定义数据修改和操作的业务逻辑。我们可以把Model称为数据层，因为它仅仅关注数据本身，不关心任何行为</li><li>View: 用户操作界面。当ViewModel对Model进行更新的时候，会通过数据绑定更新到View</li><li>ViewModel： 业务逻辑层，View需要什么数据，ViewModel要提供这个数据；View有某些操作，ViewModel就要响应这些操作，所以可以说它是Model for View.</li></ul><p>总结： MVVM模式简化了界面与业务的依赖，解决了数据频繁更新。MVVM 在使用当中，利用双向绑定技术，使得 Model 变化时，ViewModel 会自动更新，而 ViewModel 变化时，View 也会自动变化。</p>]]></content>
+        <author>
+            <name>DK</name>
+            <uri>https://github.com/dk-wuwei</uri>
+        </author>
+        <category label="JavaScript" term="JavaScript"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[解决 Git 修改文件命大小写后提交无效]]></title>
         <id>resolve-git-file-life-capitalization</id>
