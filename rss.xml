@@ -4,10 +4,19 @@
         <title>DK Blog Blog</title>
         <link>https://dk-wuwei.github.io/dk-blog/</link>
         <description>DK Blog Blog</description>
-        <lastBuildDate>Fri, 26 Jan 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Feb 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
+        <item>
+            <title><![CDATA[gitlab 删除、新建远程分支问题]]></title>
+            <link>https://dk-wuwei.github.io/dk-blog/gitlab-add-or-delete-branch</link>
+            <guid>gitlab-add-or-delete-branch</guid>
+            <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[删除分支后本地查看远程分支仍显示已删除的分支]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="删除分支后本地查看远程分支仍显示已删除的分支">删除分支后本地查看远程分支仍显示已删除的分支<a class="hash-link" href="#删除分支后本地查看远程分支仍显示已删除的分支" title="标题的直接链接">​</a></h2><ol><li>使用 git branch -r 命令查看远程分支，发现远程分支已经删除，但本地还显示</li><li>使用 git remote show origin 查看 remote 地址，远程分支，及远程分支与本地分支相对应关系等信息</li><li>使用 git remote prune origin 同步本地分支</li><li>使用 git branch -r 命令再次查看远程分支就与 gitlab 一致了</li></ol><h2 class="anchor anchorWithStickyNavbar_LWe7" id="新建分支后本地查看远程分支不显示已建的分支">新建分支后本地查看远程分支不显示已建的分支<a class="hash-link" href="#新建分支后本地查看远程分支不显示已建的分支" title="标题的直接链接">​</a></h2><ol><li>使用 git remote update origin --prune 命令</li><li>使用 git branch -r 就可以查看到新建的分支</li></ol>]]></content:encoded>
+            <category>Git</category>
+        </item>
         <item>
             <title><![CDATA[JS Paradigm]]></title>
             <link>https://dk-wuwei.github.io/dk-blog/Paradigm</link>
@@ -49,12 +58,12 @@
             <category>idea</category>
         </item>
         <item>
-            <title><![CDATA[浅析MVVM]]></title>
-            <link>https://dk-wuwei.github.io/dk-blog/margin和padding的区别以及什么时候使用</link>
-            <guid>margin和padding的区别以及什么时候使用</guid>
+            <title><![CDATA[margin和padding的区别以及什么时候使用]]></title>
+            <link>https://dk-wuwei.github.io/dk-blog/css-margin-padding</link>
+            <guid>css-margin-padding</guid>
             <pubDate>Sat, 25 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[首先需要明白，盒子模型主要定义四个区域：内容（content）、边框与内容的区域，称为内边距（padding）、边框（border）、边框与外部的区域，称为外边距（margin）。]]></description>
-            <content:encoded><![CDATA[<p>首先需要明白，盒子模型主要定义四个区域：内容（content）、边框与内容的区域，称为内边距（padding）、边框（border）、边框与外部的区域，称为外边距（margin）。</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="区别">区别<a class="hash-link" href="#区别" title="标题的直接链接">​</a></h2><ol><li>margin：表示边框以外的区域</li><li>padding：表示边框与内容之间的区域</li></ol><h2 class="anchor anchorWithStickyNavbar_LWe7" id="使用场景">使用场景<a class="hash-link" href="#使用场景" title="标题的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="margin的使用场景">margin的使用场景：<a class="hash-link" href="#margin的使用场景" title="标题的直接链接">​</a></h3><ol><li>需要在border（边框）以外的区域添加空白间距时；</li><li>空白区域不需要使用背景颜色时</li></ol><blockquote><p>注意：上下两个相连的盒子之间使用的外边距需要相互抵消。 需要使用负值对页面布局时（注意：margin的值可以取负数，padding的值是不能使负数的）</p></blockquote><h3 class="anchor anchorWithStickyNavbar_LWe7" id="padding的使用场景">padding的使用场景：<a class="hash-link" href="#padding的使用场景" title="标题的直接链接">​</a></h3><ol><li>需要在border内侧添加空白</li><li>空白区域需要使用到背景颜色</li></ol><blockquote><p>注意：上下相连的两个盒子之间的空白，间距是两者之和 最后，需注意margin是用来隔开元素与元素的间距；padding是用来隔开元素与内容的间距；margin用于布局分开元素，使元素与元素互不干扰；padding用于元素与内容之间间隔，让内容与元素之间有一段距离。</p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="补充">补充<a class="hash-link" href="#补充" title="标题的直接链接">​</a></h2><ul><li><p>怪异盒模型：content=content+padding+border</p></li><li><p>标准盒模型：content=content</p></li><li><p><strong>在怪异盒模型中，一个块的总宽度受margin影响，但不受padding的影响。</strong></p></li></ul>]]></content:encoded>
+            <content:encoded><![CDATA[<p>首先需要明白，盒子模型主要定义四个区域：内容（content）、边框与内容的区域，称为内边距（padding）、边框（border）、边框与外部的区域，称为外边距（margin）。</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="区别">区别<a class="hash-link" href="#区别" title="标题的直接链接">​</a></h2><ol><li>margin：表示边框以外的区域</li><li>padding：表示边框与内容之间的区域</li></ol><h2 class="anchor anchorWithStickyNavbar_LWe7" id="使用场景">使用场景<a class="hash-link" href="#使用场景" title="标题的直接链接">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="margin-的使用场景">margin 的使用场景：<a class="hash-link" href="#margin-的使用场景" title="标题的直接链接">​</a></h3><ol><li>需要在 border（边框）以外的区域添加空白间距时；</li><li>空白区域不需要使用背景颜色时</li></ol><blockquote><p>注意：上下两个相连的盒子之间使用的外边距需要相互抵消。 需要使用负值对页面布局时（注意：margin 的值可以取负数，padding 的值是不能使负数的）</p></blockquote><h3 class="anchor anchorWithStickyNavbar_LWe7" id="padding-的使用场景">padding 的使用场景：<a class="hash-link" href="#padding-的使用场景" title="标题的直接链接">​</a></h3><ol><li>需要在 border 内侧添加空白</li><li>空白区域需要使用到背景颜色</li></ol><blockquote><p>注意：上下相连的两个盒子之间的空白，间距是两者之和 最后，需注意 margin 是用来隔开元素与元素的间距；padding 是用来隔开元素与内容的间距；margin 用于布局分开元素，使元素与元素互不干扰；padding 用于元素与内容之间间隔，让内容与元素之间有一段距离。</p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="补充">补充<a class="hash-link" href="#补充" title="标题的直接链接">​</a></h2><ul><li><p>怪异盒模型：content=content+padding+border</p></li><li><p>标准盒模型：content=content</p></li><li><p><strong>在怪异盒模型中，一个块的总宽度受 margin 影响，但不受 padding 的影响。</strong></p></li></ul>]]></content:encoded>
             <category>CSS</category>
         </item>
         <item>
